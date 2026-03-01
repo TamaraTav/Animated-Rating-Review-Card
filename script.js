@@ -15,10 +15,13 @@ const REVIEWS = {
 const totalReviews = Object.values(REVIEWS).reduce((sum, value) => {
   return sum + value
 }, 0)
-const averageReview =
-  Object.entries(REVIEWS).reduce((sum, [value, quantity]) => {
-    return sum + value * quantity
-  }, 0) / totalReviews
+let averageReview = 0
+if (totalReviews > 0) {
+  averageReview =
+    Object.entries(REVIEWS).reduce((sum, [value, quantity]) => {
+      return sum + value * quantity
+    }, 0) / totalReviews
+}
 
 averageReviewElem.dataset.endValue = Math.round(averageReview * 10) / 10
 averageReviewElem.textContent = 0
@@ -79,7 +82,8 @@ function update(time) {
 }
 
 function getNewValue(endValue, timeElapsed) {
-  return Math.min((endValue * timeElapsed) / DURATION, endValue)
+  const numericEndValue = Number(endValue) || 0
+  return Math.min((numericEndValue * timeElapsed) / DURATION, numericEndValue)
 }
 
 requestAnimationFrame(update)
