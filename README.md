@@ -6,7 +6,7 @@ Interactive, animated rating summary card built with plain HTML, CSS, and JavaSc
 
 The visual design of this component is based on the **“Reviews”** design from **UI Design Daily**:
 
-- **Figma / UI Source**: [UI Design Daily – Reviews](https://www.uidesigndaily.com/posts/figma-reviews-day-1573)
+- **Figma / UI Source**: <a href="https://www.uidesigndaily.com/posts/figma-reviews-day-1573" target="_blank" rel="noopener noreferrer">UI Design Daily – Reviews</a>
 
 This implementation recreates the layout and interactions in code.
 
@@ -95,7 +95,7 @@ To change the distribution, update `REVIEWS` in `script.js` and reload the page.
 This project is intended primarily for **learning and personal use**.  
 The UI concept belongs to **UI Design Daily**; please refer to their site and license terms for design usage:
 
-- [UI Design Daily – Reviews](https://www.uidesigndaily.com/posts/figma-reviews-day-1573)
+- <a href="https://www.uidesigndaily.com/posts/figma-reviews-day-1573" target="_blank" rel="noopener noreferrer">UI Design Daily – Reviews</a>
 
 You are free to adapt the code for your own experiments, portfolios, or internal demos.
 
